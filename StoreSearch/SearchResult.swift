@@ -8,5 +8,5 @@
 
 class SearchResult {
     var name = ""
-    var artist = ""
+    var artistName = ""
 }
