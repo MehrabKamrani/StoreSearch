@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoadingCell" id="6fo-Gk-FoV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6fo-Gk-FoV" id="Uwd-al-PRZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-6u-wEj">
+                        <rect key="frame" x="92" y="9" width="136" height="60"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KeW-RU-Y62">
+                                <rect key="frame" x="96" y="20" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-fM-LPA">
+                                <rect key="frame" x="20" y="21" width="68" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ScF-fM-LPA" firstAttribute="leading" secondItem="tFD-6u-wEj" secondAttribute="leading" constant="20" id="7od-pj-CMO"/>
+                            <constraint firstAttribute="trailing" secondItem="KeW-RU-Y62" secondAttribute="trailing" constant="20" id="AgZ-8b-xo8"/>
+                            <constraint firstAttribute="bottom" secondItem="ScF-fM-LPA" secondAttribute="bottom" constant="21" id="DlE-Ai-k1z"/>
+                            <constraint firstItem="KeW-RU-Y62" firstAttribute="top" secondItem="tFD-6u-wEj" secondAttribute="top" constant="20" id="QjJ-b9-EcZ"/>
+                            <constraint firstItem="ScF-fM-LPA" firstAttribute="top" secondItem="tFD-6u-wEj" secondAttribute="top" constant="21" id="VKr-9x-Dsm"/>
+                            <constraint firstAttribute="bottom" secondItem="KeW-RU-Y62" secondAttribute="bottom" constant="20" id="cp1-j7-DFb"/>
+                            <constraint firstItem="KeW-RU-Y62" firstAttribute="leading" secondItem="ScF-fM-LPA" secondAttribute="trailing" constant="8" id="zM6-vg-XS5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tFD-6u-wEj" firstAttribute="centerX" secondItem="Uwd-al-PRZ" secondAttribute="centerX" id="AjE-v4-WkF"/>
+                    <constraint firstItem="tFD-6u-wEj" firstAttribute="centerY" secondItem="Uwd-al-PRZ" secondAttribute="centerY" id="l1K-85-nLE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="46" y="48"/>
+        </tableViewCell>
+    </objects>
+</document>
