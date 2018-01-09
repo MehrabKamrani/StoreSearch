@@ -51,6 +51,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func close() {
+        dismissAnimationStyle = .slide
         dismiss(animated: true, completion: nil)
     }
     
@@ -105,6 +106,12 @@ class DetailViewController: UIViewController {
         print("deinit \(self)")
         downloadTask?.cancel()
     }
+    
+    enum AnimationStyle {
+        case slide
+        case fade
+    }
+    var dismissAnimationStyle = AnimationStyle.fade
 }
 
 extension DetailViewController: UIViewControllerTransitioningDelegate {
@@ -117,7 +124,12 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideOutAnimationController()
+        switch dismissAnimationStyle {
+        case .slide:
+            return SlideOutAnimationController()
+        case .fade:
+            return FadeOutAnimationController()
+        }
     }
 }
 

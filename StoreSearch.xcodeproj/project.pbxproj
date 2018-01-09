@@ -22,6 +22,8 @@
 		1AC52A6C1FF4E403006C722F /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC52A6B1FF4E403006C722F /* SearchResultCell.xib */; };
 		1AC52A6E1FF4FC0E006C722F /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC52A6D1FF4FC0E006C722F /* SearchResultCell.swift */; };
 		1AC52A701FF51016006C722F /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC52A6F1FF51016006C722F /* NothingFoundCell.xib */; };
+		1AD10D1620037AFA002BE939 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD10D1520037AFA002BE939 /* LandscapeViewController.swift */; };
+		1AD10D1820052481002BE939 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD10D1720052481002BE939 /* FadeOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		1AC52A6B1FF4E403006C722F /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		1AC52A6D1FF4FC0E006C722F /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		1AC52A6F1FF51016006C722F /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		1AD10D1520037AFA002BE939 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		1AD10D1720052481002BE939 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				1A62E45B2000D54400A63C7E /* GradientView.swift */,
 				1A62E45D2002026F00A63C7E /* BounceAnimationController.swift */,
 				1A62E4612002122700A63C7E /* SlideOutAnimationController.swift */,
+				1AD10D1520037AFA002BE939 /* LandscapeViewController.swift */,
+				1AD10D1720052481002BE939 /* FadeOutAnimationController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			files = (
 				1A6B0FDA1FF2424000E81375 /* SearchViewController.swift in Sources */,
 				1A044EB41FFE9BF0008CBF21 /* DimmingPresentationController.swift in Sources */,
+				1AD10D1820052481002BE939 /* FadeOutAnimationController.swift in Sources */,
 				1A6B0FEA1FF4102F00E81375 /* SearchResult.swift in Sources */,
 				1AC52A6E1FF4FC0E006C722F /* SearchResultCell.swift in Sources */,
 				1A62E45E2002026F00A63C7E /* BounceAnimationController.swift in Sources */,
+				1AD10D1620037AFA002BE939 /* LandscapeViewController.swift in Sources */,
 				1A044EB21FFE8466008CBF21 /* DetailViewController.swift in Sources */,
 				1A6B0FD81FF2424000E81375 /* AppDelegate.swift in Sources */,
 				1A62E45C2000D54400A63C7E /* GradientView.swift in Sources */,
