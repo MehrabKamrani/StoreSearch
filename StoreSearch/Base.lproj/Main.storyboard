@@ -38,7 +38,7 @@
                                 <items>
                                     <navigationItem id="jPJ-0l-bgz">
                                         <nil key="title"/>
-                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="bK5-d9-6a7">
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="bK5-d9-6a7">
                                             <rect key="frame" x="144.5" y="1.5" width="279" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
@@ -110,6 +110,7 @@
                     <connections>
                         <outlet property="pageControl" destination="rMZ-SK-pLN" id="tZg-xF-bUS"/>
                         <outlet property="scrollView" destination="KgW-Qy-ZKg" id="tnO-vP-Pkx"/>
+                        <segue destination="Jjc-gu-cfD" kind="presentation" identifier="ShowDetail" id="wlI-4a-pma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl8-cf-cCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -237,11 +238,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1t-yg-9t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001.25" y="107.74647887323944"/>
+            <point key="canvasLocation" x="1008" y="478"/>
         </scene>
     </scenes>
     <resources>
         <image name="CloseButton" width="15" height="15"/>
         <image name="PriceButton" width="11" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wlI-4a-pma"/>
+    </inferredMetricsTieBreakers>
 </document>
